@@ -1,0 +1,69 @@
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;   
+  }  
+  
+  .formStyle {
+    padding: 20px;
+    font-size: 23px;
+    margin: auto;
+    margin-top: 80px;
+    background: #172149;
+    box-shadow: 0 5px 15px rgba(59, 7, 7, 0.6);
+    z-index: 999;
+    width: 626px;
+    height: 357px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+  button {   
+         background-color: rgba(9, 243, 126, 0.5);   
+         width: 100%;  
+          color: black;   
+          padding: 15px;   
+          margin: 10px 0px;   
+          border: none;   
+          cursor: pointer; 
+          font-weight: bold;  
+}   
+
+   input[type=text], input[type=password] {   
+          width: 100%;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;   
+          border: 2px solid #088175;   
+          box-sizing: border-box;   
+      }  
+   button:hover {   
+          opacity: 0.7;   
+      }   
+    .cancelbtn {   
+          width: auto;   
+          padding: 10px 18px;  
+          margin: 10px 5px;  
+      }   
+    
+    label {
+        color: #088175;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #youngman {
+        font-size: 25px;
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 30px;
+        z-index: 999;
+        border-radius: 50px;
+        width: 626px;
+        height: 300px;
+    }
+

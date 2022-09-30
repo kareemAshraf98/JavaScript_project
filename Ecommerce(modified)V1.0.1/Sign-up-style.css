@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    width: 500px;
+}
+
+#formStyle {
+    padding: 20px;
+    font-size: 23px;
+    margin: auto;
+    margin-top: 50px;
+    background: #172149;
+    box-shadow: 0 5px 15px rgba(59, 7, 7, 0.6);
+    z-index: 999;
+    /* border-radius: 50px; */
+    width: 626px;
+    height: 417px;
+}
+
+h3 {
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    color: #088175;
+}
+
+label {
+    color: #088175;
+}
+
+.flex-container {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#girl {
+    font-size: 25px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+
+    z-index: 999;
+    border-radius: 50px;
+    
+}
