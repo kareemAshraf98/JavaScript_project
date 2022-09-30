@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product details page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="886479409786-fe5drbi3d0vnvbr64aid145ff8khkge1.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="pdp.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="logo-black.png" type="image/x-icon" />
+  </head>
+
+ 
+
+  <body>
+    <section id="header">
+      <a href="#"
+          ><img src="logo-black.png" class="logo" alte="iti market"
+      /></a>
+      <div>
+          
+          <!-- NAVIGATION BAR START -->
+          <ul id="navbar">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="Sign-up.html">Signup</a></li>
+              <li>
+                <a href="card.html">
+                    <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+            </li>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+
+                <a href="card.html">
+                    <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+
+    </div>
+</section>
+    <div class = "card-wrapper">
+      <div class = "card">
+      
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "productsImages/6.0.jpg" alt = "product image">
+              <img src = "productsImages/6.1.jpg" alt = "product image">
+              <img src = "productsImages/6.2.jpg" alt = "product image">
+              <img src = "productsImages/6.3.jpg" alt = "product image">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "productsImages/6.1.jpg" alt = "product image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "productsImages/6.2.jpg" alt = "product image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "productsImages/6.3.jpg" alt = "product image">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      
+        <div class = "product-content">
+          <h2 class = "product-title">Short Sleeve Tshirt</h2>
+          
+        
+
+          <div class = "product-price">
+            <p class = "last-price">Old Price: <span>$350</span></p>
+            <p class = "new-price">New Price: <span>$299</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>Product description: </h2>
+            <p>100% Cotton Material
+Regular fit
+Short Sleeves
+Round Neck
+Printed Pattern
+Slip On</p>
+            
+            <ul>
+              <li>Color: <span>Orange</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>Tshirts</span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            <select class="Size options">
+              <option>Select Size</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              
+            </select>
+            
+          <div class="purchase-info">
+            <button onclick="addToCartClicked"
+          class="btn btn-primary shop-item-button"
+          type="button">
+          ADD TO CART
+      </button>
+        </div>
+        </div>
+     
+<div>
+    <div class = "product-rating">
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "fas fa-star"></i>
+        <i class = "far fa-star"></i>
+        <span>(4)</span>
+</div>
+          <div class = "social-links">
+            <p>Share: </p>
+            <a href = "www.facebook.com">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "www.twitter.com">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "www.instagram.com">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "www.whatsapp.com">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "www.pinterest.com">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="pdp.js"></script>
+  </body>
+</html>
