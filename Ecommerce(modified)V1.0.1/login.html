@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
   <link rel="stylesheet" href="login.css">
   <link
             rel="stylesheet"
@@ -46,20 +46,20 @@
   </section>
   <!-- navigation bar ending -->
   <div class="flex-container">
-    <form>   
+    <form onsubmit="return getVal()">   
      <div class="formStyle">   
         <label>E-mail : </label>   
         <input type="text" placeholder="Enter E-mail" name="username" required id="userName">  
         <label>Password : </label>   
         <input type="password" placeholder="Enter Password" name="password" required id="passWord">  
-        <button type="submit" onclick="getVal()">Login</button>   
+        <button type="submit" onclick="check()">Login</button>   
         <!-- <input type="checkbox" checked="checked"> Remember me   
         <button type="button" class="cancelbtn"> Cancel</button>   
         Forgot <a href="#"> password? </a>    -->
         <div style="color: white; text-align: center">---------- &nbsp OR &nbsp ----------</div>
         <div style="color: white">If you're new here <span><a href="Sign-up.html">Signup</a></span></div>
      </div>
-     <script src="login.js"></script>   
+     <script src="login.js"></script>  
     </form>
     <div id="youngman"><img src="loginimg.jpg" alt="youngman"></div>
   </div>

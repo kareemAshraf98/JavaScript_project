@@ -31,9 +31,22 @@ function getVal() {
     }
 
 }
-jQuery(window).load(function(){
-  sessionStorage.setItem("status", loggedin);
-});
+function check(){
+var storedEmail = localStorage.getItem("E-Mail");
+var storedPass = localStorage.getItem("Password");
+
+
+  if(email.value == storedEmail && password.value == storedPass){
+    window.location.href = "index.html";
+    console.log(storedEmail);
+    console.log(storedPass);
+  }else{
+    alert("invalid");
+  }
+}
+// jQuery(window).load(function(){
+//   sessionStorage.setItem("status", loggedin);
+// });
 
 
 
