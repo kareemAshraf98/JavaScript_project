@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+  <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="logo-black.png" type="image/x-icon" />
+
+</head>
+<body>
+  <!-- navigation bar start -->
+  <section id="header">
+    <a href="#"
+        ><img src="logo-black.png" class="logo" alte="iti market"
+    /></a>
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Sign-up.html">Signup</a></li>
+            <li>
+                <a href="card.html">
+                    <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+            </li>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+
+                <a href="card.html">
+                    <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+
+    </div>
+  </section>
+  <!-- navigation bar ending -->
+  <div class="flex-container">
+    <form>   
+     <div class="formStyle">   
+        <label>E-mail : </label>   
+        <input type="text" placeholder="Enter E-mail" name="username" required id="userName">  
+        <label>Password : </label>   
+        <input type="password" placeholder="Enter Password" name="password" required id="passWord">  
+        <button type="submit" onclick="getVal()">Login</button>   
+        <!-- <input type="checkbox" checked="checked"> Remember me   
+        <button type="button" class="cancelbtn"> Cancel</button>   
+        Forgot <a href="#"> password? </a>    -->
+        <div style="color: white; text-align: center">---------- &nbsp OR &nbsp ----------</div>
+        <div style="color: white">If you're new here <span><a href="Sign-up.html">Signup</a></span></div>
+     </div>
+     <script src="login.js"></script>   
+    </form>
+    <div id="youngman"><img src="loginimg.jpg" alt="youngman"></div>
+  </div>
+</body>
+</html>
