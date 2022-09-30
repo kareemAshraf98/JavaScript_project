@@ -23,6 +23,7 @@ var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@
 //password regex for validation
 var pswRegex =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
+
 //validation function
 function validation(){
     var flag = true;
@@ -85,6 +86,10 @@ function validation(){
         conf_text.style.color = "red";
         flag = false;
     }
+    if (conf_psw.value == password.value && conf_psw.value != ""){
+        window.location.href = "file:///F:/ITI/JS/JS-Project/Ecommerce(modified)V1.0.1/index.html";
+        flag = false;
+    }
 
     // Number Validation
     if(isNaN(p_number.value) == true){
@@ -96,9 +101,9 @@ function validation(){
         p_text.style.color = "red";
         flag = false;
     }
+    
     return flag;
 }
-
 
 // storage data locally
 function storage(){
