@@ -11,6 +11,8 @@
 // }    
 
 function getVal() {
+  var storedEmail = localStorage.getItem("E-Mail");
+  var storedPass = localStorage.getItem("Password");
 
     var email = document.getElementById('userName');
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -29,21 +31,15 @@ function getVal() {
     password.focus;
     return false;
     }
+    if(email.value == storedEmail && password.value == storedPass){
+      window.location.href = "file:///F:/ITI/JS/JS-Project/Ecommerce(modified)V1.0.1/index.html";
+      console.log(storedEmail);
+      console.log(storedPass);
+      return false;
+    }
 
 }
-function check(){
-var storedEmail = localStorage.getItem("E-Mail");
-var storedPass = localStorage.getItem("Password");
 
-
-  if(email.value == storedEmail && password.value == storedPass){
-    window.location.href = "index.html";
-    console.log(storedEmail);
-    console.log(storedPass);
-  }else{
-    alert("invalid");
-  }
-}
 // jQuery(window).load(function(){
 //   sessionStorage.setItem("status", loggedin);
 // });
