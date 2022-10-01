@@ -18,19 +18,18 @@ function slideImage(){
 
 window.addEventListener('resize', slideImage);
 
-function addToCartClicked(event) {
-    if (sessionStorage.getItem('status') != null){
+function addToCartClicked2(event) {
+    localStorage.setItem('status',"logged");
+    if (localStorage.getItem('status') == null){
 
-    <p>Please follow the link<a href="login.html">to login first</a>.</p>
+        document.getElementById('demo').innerHTML = '<p>Please follow the link <a href="login.html">to login first</a>.</p>';
 
     }
     else {
-    let button = event.target;
-    let shopItem = button.parentElement.parentElement;
-    let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
-    let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
-    let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-    addItemToCart(title, price, imageSrc);
-    updateCartTotal();
+        let button = event.target;
+        let shopItem = button.parentElement.parentElement.parentElement;
+        let title = shopItem.getElementsByClassName('product-title')[0].innerText;
+        let price = parseInt(shopItem.getElementsByClassName('product-price')[0].getElementsByClassName('new-price')[0].getElementsByTagName('span')[0].innerText.substring(1));
+        addItemToCartArray(title, price, "productsImages/1.0.jpg");
     }
 }
