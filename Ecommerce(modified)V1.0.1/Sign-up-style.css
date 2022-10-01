@@ -15,7 +15,7 @@
     z-index: 999;
     /* border-radius: 50px; */
     width: 626px;
-    height: 417px;
+    height: auto;
 }
 
 h3 {
@@ -27,12 +27,19 @@ h3 {
 
 label {
     color: #088175;
+    margin-bottom: 4px;
+}
+input{
+    padding: 4px 4px 4px 4px;
+    margin-bottom: 4px;
 }
 
 .flex-container {
     display: flex;
-    margin: auto;
+    margin-left: 120px;
     flex-wrap: wrap;
+    height: auto;
+    position: absolute;
 }
 
 #girl {
@@ -44,4 +51,7 @@ label {
     z-index: 999;
     border-radius: 50px;
     
+}
+span{
+    font-size: 15px;
 }
