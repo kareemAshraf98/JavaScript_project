@@ -3,7 +3,13 @@ if (document.readyState == 'loading') {
 } else {
     ready();
 }
-
+class cartData {
+    constructor(title,price,image){
+        this.title =title;
+        this.price = price;
+        this.image = image;
+    }
+}
 function ready() {
     let removeCartItemButtons = document.getElementsByClassName('btn-danger');
     for (let i = 0; i < removeCartItemButtons.length; i++) {
@@ -49,6 +55,15 @@ function quantityChanged(event) {
         input.value = 1;
     }
     updateCartTotal();
+}
+function addToCartClicked(event) {
+   // let button = event.target;
+   // let shopItem = button.parentElement.parentElement;
+   // let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
+   // let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
+   // let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+   // addItemToCart(title, price, imageSrc);
+   // updateCartTotal();
 }
 
 function addToCartClicked(event) {
@@ -115,5 +130,46 @@ function addInhome(){
 
     carts.addEventListener("click",addItemToCart);
     carts.addEventListener("click", addToCartClicked);
+
+}
+window.onload= (event) =>
+{
+    updateCartTotalPrice();
+    addItemToCartDisplay();
+};
+function updateCartTotalPrice(){
+    let total = 0;
+    let cartArray = JSON.parse(window.localStorage.getItem('cartArray'));
+    cartArray.forEach(x => total+=x.price);
+    document.getElementsByClassName("cart-total-price")[0].innerHTML = "$"+total;
+}
+
+function addItemToCartDisplay(title, price, imageSrc) {
+    let cartItems = document.getElementsByClassName('cart-items')[0];
+    let cartArray = JSON.parse(window.localStorage.getItem('cartArray'));
+    for(let i=0; i< cartArray.length; i++){
+
+        let cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${cartArray[i].image}" width="100" height="100">
+            <span class="cart-item-title">${cartArray[i].title}</span>
+        </div>
+        <span class="cart-price cart-column">${cartArray[i].price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>`;
+
+        let cartRow = document.createElement('div');
+        cartRow.classList.add('cart-row');
+        cartRow.innerHTML = cartRowContents;
+        cartItems.append(cartRow);
+        cartRow
+            .getElementsByClassName('btn-danger')[0]
+            .addEventListener('click', removeCartItem);
+        cartRow
+            .getElementsByClassName('cart-quantity-input')[0]
+            .addEventListener('change', quantityChanged);
+    }
 
 }
