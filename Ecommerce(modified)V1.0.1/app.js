@@ -56,24 +56,16 @@ function quantityChanged(event) {
     }
     updateCartTotal();
 }
-function addToCartClicked(event) {
-   // let button = event.target;
-   // let shopItem = button.parentElement.parentElement;
-   // let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
-   // let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
-   // let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-   // addItemToCart(title, price, imageSrc);
-   // updateCartTotal();
-}
+
 
 function addToCartClicked(event) {
-    let button = event.target;
-    let shopItem = button.parentElement.parentElement;
-    let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
-    let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
-    let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-    addItemToCart(title, price, imageSrc);
-    updateCartTotal();
+    //let button = event.target;
+    //let shopItem = button.parentElement.parentElement;
+    //let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
+    //let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
+    //let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+    //addItemToCart(title, price, imageSrc);
+    //updateCartTotal();
 }
 
 function addItemToCart(title, price, imageSrc) {
