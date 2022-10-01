@@ -1,12 +1,13 @@
 Body {  
     font-family: Calibri, Helvetica, sans-serif;   
-  }  
+}  
   
-  .formStyle {
-    padding: 20px;
+.formStyle {
+    padding: 40px 40px 40px 40px;
+    padding-top: 50px;
     font-size: 23px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
     background: #172149;
     box-shadow: 0 5px 15px rgba(59, 7, 7, 0.6);
     z-index: 999;
@@ -65,5 +66,8 @@ Body {
         border-radius: 50px;
         width: 626px;
         height: 300px;
+    }
+    .if{
+        font-size: 17px;
     }
 
